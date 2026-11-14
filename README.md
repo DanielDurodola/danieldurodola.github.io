@@ -1,5 +1,4 @@
-# DanielDurodola.github.io
-# Daniel Durodola
+# danieldurodola.github.io
 
 Personal site of Daniel Durodola, physics undergraduate at the University of Lagos, working on computational physics and N-body simulation. Static: one HTML file, one photo, no build step and no dependencies.
 
