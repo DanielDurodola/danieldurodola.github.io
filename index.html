@@ -3,9 +3,13 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Daniel Durodola | Physics Student, University of Lagos</title>
-<meta name="description" content="Daniel Durodola is a physics undergraduate at the University of Lagos working on computational physics and N-body simulation.">
+<title>Daniel Durodola | Computational Physics, University of Lagos</title>
+<meta name="description" content="Daniel Durodola is a physics undergraduate at the University of Lagos working on computational physics, numerical methods and scientific computing in Python.">
 <link rel="canonical" href="https://danieldurodola.github.io/">
+<meta property="og:title" content="Daniel Durodola | Computational Physics">
+<meta property="og:description" content="Physics undergraduate at the University of Lagos. N-body integration, physics simulations and scientific computing.">
+<meta property="og:image" content="https://danieldurodola.github.io/photo.jpg">
+<meta property="og:url" content="https://danieldurodola.github.io/">
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
@@ -13,30 +17,187 @@
   "name": "Daniel Durodola",
   "image": "https://danieldurodola.github.io/photo.jpg",
   "url": "https://danieldurodola.github.io/",
+  "email": "mailto:danieldurodola02@gmail.com",
   "jobTitle": "Physics Undergraduate",
+  "description": "Physics undergraduate at the University of Lagos working on computational physics and scientific computing.",
   "affiliation": {"@type": "CollegeOrUniversity", "name": "University of Lagos"},
+  "knowsAbout": ["Computational physics", "N-body simulation", "Numerical integration", "Scientific computing", "Python"],
   "sameAs": [
     "https://orcid.org/0009-0009-7171-4901",
     "https://www.linkedin.com/in/daniel-durodola-98581839b",
-    "https://github.com/DanielDurodola"
+    "https://github.com/DanielDurodola",
+    "https://doi.org/10.5281/zenodo.23566896"
   ]
 }
 </script>
 <style>
-  body{font-family:system-ui,sans-serif;max-width:640px;margin:auto;padding:24px;line-height:1.6;color:#222}
-  img{width:160px;height:160px;border-radius:50%;object-fit:cover}
-  a{color:#0b5cd6}
+  :root{--bg:#0d1117;--card:#161b22;--line:#262d36;--text:#d7dde4;--mute:#8b96a3;--accent:#58a6ff;--accent2:#7ee787}
+  *{box-sizing:border-box}
+  html{scroll-behavior:smooth}
+  body{margin:0;background:var(--bg);color:var(--text);font-family:system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;line-height:1.65}
+  a{color:var(--accent);text-decoration:none}
+  a:hover{text-decoration:underline}
+  .wrap{max-width:860px;margin:auto;padding:0 20px}
+  header.nav{position:sticky;top:0;background:rgba(13,17,23,.92);backdrop-filter:blur(8px);border-bottom:1px solid var(--line);z-index:5}
+  header.nav .wrap{display:flex;gap:16px;align-items:center;justify-content:space-between;padding:12px 20px;flex-wrap:wrap}
+  header.nav b{font-family:ui-monospace,Menlo,Consolas,monospace;font-size:.95rem}
+  header.nav nav a{margin-left:14px;font-size:.88rem;color:var(--mute)}
+  header.nav nav a:hover{color:var(--text);text-decoration:none}
+  .hero{padding:56px 0 36px;display:flex;gap:28px;align-items:center;flex-wrap:wrap}
+  .hero img{width:150px;height:150px;border-radius:50%;object-fit:cover;border:2px solid var(--line)}
+  .hero h1{margin:0 0 4px;font-size:2.1rem;line-height:1.2}
+  .tag{color:var(--accent2);font-family:ui-monospace,Menlo,Consolas,monospace;font-size:.9rem;margin:0 0 10px}
+  .hero p{margin:0 0 14px;color:var(--text);max-width:560px}
+  .btns a{display:inline-block;margin:0 8px 8px 0;padding:8px 14px;border:1px solid var(--line);border-radius:8px;font-size:.88rem;color:var(--text)}
+  .btns a.primary{background:var(--accent);border-color:var(--accent);color:#0d1117;font-weight:600}
+  .btns a:hover{text-decoration:none;border-color:var(--accent)}
+  section{padding:34px 0;border-top:1px solid var(--line)}
+  h2{font-size:1.25rem;margin:0 0 16px}
+  h2 span{font-family:ui-monospace,Menlo,Consolas,monospace;color:var(--accent2);font-size:.9rem;margin-right:8px}
+  .card{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:18px;margin-bottom:14px}
+  .card.feat{border-color:var(--accent)}
+  .card h3{margin:0 0 6px;font-size:1.05rem}
+  .card p{margin:0 0 10px;color:var(--text)}
+  .meta{color:var(--mute);font-size:.85rem;margin:0 0 8px}
+  .chips{display:flex;flex-wrap:wrap;gap:6px;margin:8px 0 10px;padding:0;list-style:none}
+  .chips li{font-family:ui-monospace,Menlo,Consolas,monospace;font-size:.76rem;border:1px solid var(--line);color:var(--mute);padding:2px 8px;border-radius:999px}
+  .grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:14px}
+  .grid .card{margin:0}
+  ul.plain{margin:0;padding-left:18px}
+  ul.plain li{margin-bottom:6px}
+  footer{padding:30px 0 50px;border-top:1px solid var(--line);color:var(--mute);font-size:.85rem}
+  @media(max-width:520px){.hero h1{font-size:1.7rem}header.nav nav a{margin:0 10px 0 0}}
 </style>
 </head>
 <body>
-  <img src="photo.jpg" alt="Daniel Durodola">
-  <h1>Daniel Durodola</h1>
-  <p>Physics undergraduate at the <b>University of Lagos</b>, also studying electrical and electronics engineering. I work on computational physics, including N-body integrators (Euler, velocity-Verlet, RK4).</p>
-  <h2>Find me online</h2>
-  <ul>
-    <li><a href="https://www.linkedin.com/in/daniel-durodola-98581839b">LinkedIn</a></li>
-    <li><a href="https://github.com/DanielDurodola">GitHub</a></li>
-    <li><a href="https://orcid.org/0009-0009-7171-4901">ORCID: 0009-0009-7171-4901</a></li>
-  </ul>
+
+<header class="nav">
+  <div class="wrap">
+    <b>daniel_durodola</b>
+    <nav>
+      <a href="#about">About</a>
+      <a href="#research">Research</a>
+      <a href="#projects">Projects</a>
+      <a href="#skills">Skills</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </div>
+</header>
+
+<main class="wrap">
+
+  <div class="hero">
+    <img src="photo.jpg" alt="Daniel Durodola">
+    <div>
+      <h1>Daniel Durodola</h1>
+      <p class="tag">Physics @ University of Lagos | Computational Physics &amp; Scientific Computing</p>
+      <p>I build simulations and numerical tools that test how well computational methods describe the physical world, from gravitational N-body integrators to interactive physics visualisers.</p>
+      <div class="btns">
+        <a class="primary" href="#research">View research</a>
+        <a href="https://github.com/DanielDurodola">GitHub</a>
+        <a href="https://www.linkedin.com/in/daniel-durodola-98581839b">LinkedIn</a>
+        <a href="https://orcid.org/0009-0009-7171-4901">ORCID</a>
+      </div>
+    </div>
+  </div>
+
+  <section id="about">
+    <h2><span>01</span>About</h2>
+    <p>I am an undergraduate physics student at the <b>University of Lagos</b>. My work sits where physics meets code: I write Python to model physical systems, check the numerics against analytical results, and publish the code openly so others can reproduce it.</p>
+    <p>My main interests are numerical integration, orbital mechanics, wave and field simulation, and building clear, reproducible scientific software. I also build educational tools that make physics easier to explore.</p>
+  </section>
+
+  <section id="research">
+    <h2><span>02</span>Research</h2>
+    <div class="card feat">
+      <h3>Conservation versus Trajectory Accuracy in Direct Gravitational N-Body Integration</h3>
+      <p class="meta">Computational physics benchmark | Software release v1.2.0 | Zenodo DOI | MIT licence</p>
+      <p>A reproducible benchmark comparing Euler, velocity-Verlet, classical fourth-order Runge-Kutta (RK4) and fourth-order Yoshida (Yoshida4) for direct Newtonian N-body integration, with SciPy's adaptive DOP853 as a numerical baseline.</p>
+      <p>The study separates two questions that are often confused: how well a method <i>conserves</i> energy, and how <i>accurate</i> its trajectory is. It uses analytical Kepler solutions, timestep refinement, 1,000-orbit eccentric integrations (eccentricity 0.9), a figure-eight return test, and Sun-Earth, Sun-Earth-Mars and binary-star systems. Diagnostics include relative energy error, angular-momentum error, position error, centre-of-mass drift, convergence order and computational cost.</p>
+      <p><b>Key finding:</b> good energy conservation does not guarantee small trajectory error over long runs, so methods should not be ranked on energy error alone.</p>
+      <ul class="chips"><li>Python</li><li>NumPy</li><li>SciPy</li><li>Numba</li><li>Matplotlib</li><li>pandas</li></ul>
+      <a href="https://github.com/DanielDurodola/nbody-gravitational-integration-benchmark">Code &amp; manuscript</a> &nbsp;|&nbsp;
+      <a href="https://doi.org/10.5281/zenodo.23566896">Archived release (DOI)</a>
+      <p class="meta" style="margin-top:10px">The DOI identifies the archived software release. The manuscript has not been peer-reviewed.</p>
+    </div>
+  </section>
+
+  <section id="projects">
+    <h2><span>03</span>Projects</h2>
+    <div class="grid">
+
+      <div class="card">
+        <h3>CorePhysics Engine</h3>
+        <p>A Python toolkit that combines several physics calculators in one menu-driven program: SUVAT motion solver, electricity and power, thin-lens optics (with image type and magnification), and gravity and forces.</p>
+        <ul class="chips"><li>Python</li><li>CLI</li></ul>
+        <a href="https://github.com/DanielDurodola/corephysics-engine">View on GitHub</a>
+      </div>
+
+      <div class="card">
+        <h3>Double-Slit Interference Simulator</h3>
+        <p>A simulation of double-slit interference that lets you vary the setup and see how the fringe pattern responds.</p>
+        <ul class="chips"><li>Python</li><li>Wave optics</li></ul>
+        <a href="https://github.com/DanielDurodola?tab=repositories">View on GitHub</a>
+      </div>
+
+      <div class="card">
+        <h3>Electric Field &amp; Equipotential Visualizer</h3>
+        <p>A visualiser that plots electric field lines and equipotential contours for charge configurations.</p>
+        <ul class="chips"><li>Python</li><li>Electromagnetism</li></ul>
+        <a href="https://github.com/DanielDurodola?tab=repositories">View on GitHub</a>
+      </div>
+
+      <div class="card">
+        <h3>Snell's Law Simulator</h3>
+        <p>An interactive simulation of refraction that shows how light bends between media of different refractive index.</p>
+        <ul class="chips"><li>Python</li><li>Optics</li></ul>
+        <a href="https://github.com/DanielDurodola?tab=repositories">View on GitHub</a>
+      </div>
+
+      <div class="card">
+        <h3>Projectile Motion Simulator</h3>
+        <p>An interactive Jupyter-based simulation for modelling, visualising and analysing ideal projectile motion under gravity.</p>
+        <ul class="chips"><li>Python</li><li>Jupyter</li></ul>
+        <a href="https://github.com/DanielDurodola/projectile-motion-simulator">View on GitHub</a>
+      </div>
+
+      <div class="card">
+        <h3>Solar System Quiz &amp; Space Knowledge App</h3>
+        <p>An interactive command-line quiz and Q&amp;A app for exploring the Solar System and testing space knowledge.</p>
+        <ul class="chips"><li>Python</li><li>CLI</li></ul>
+        <a href="https://github.com/DanielDurodola/solar-system-quiz-and-space-knowledge-app">View on GitHub</a>
+      </div>
+
+    </div>
+    <p style="margin-top:16px">More work is on my <a href="https://github.com/DanielDurodola">GitHub profile</a>.</p>
+  </section>
+
+  <section id="skills">
+    <h2><span>04</span>Skills &amp; Tools</h2>
+    <ul class="plain">
+      <li><b>Languages:</b> Python</li>
+      <li><b>Scientific stack:</b> NumPy, SciPy, Matplotlib, pandas, Numba, Jupyter</li>
+      <li><b>Numerical methods:</b> ODE integration (Euler, velocity-Verlet, RK4, Yoshida4, DOP853), convergence analysis, error and conservation diagnostics</li>
+      <li><b>Practice:</b> reproducible research code, Git and GitHub, Zenodo archiving and DOIs, CITATION metadata, technical writing</li>
+    </ul>
+  </section>
+
+  <section id="contact">
+    <h2><span>05</span>Contact</h2>
+    <p>Open to research collaborations, internships and conversations about computational physics.</p>
+    <ul class="plain">
+      <li>Email: <a href="mailto:danieldurodola02@gmail.com">danieldurodola02@gmail.com</a></li>
+      <li>GitHub: <a href="https://github.com/DanielDurodola">github.com/DanielDurodola</a></li>
+      <li>LinkedIn: <a href="https://www.linkedin.com/in/daniel-durodola-98581839b">Daniel Durodola</a></li>
+      <li>ORCID: <a href="https://orcid.org/0009-0009-7171-4901">0009-0009-7171-4901</a></li>
+    </ul>
+  </section>
+
+</main>
+
+<footer>
+  <div class="wrap">&copy; 2026 Daniel Durodola. Physics, University of Lagos, Nigeria.</div>
+</footer>
+
 </body>
 </html>
